@@ -1,0 +1,278 @@
+/* width 1280 px */
+body {
+  background-color: black;
+width: 1024px;
+}
+
+.header {
+  padding-top: 20px;
+}
+
+.menu_buttons,
+.social_icons {
+  padding-left: 0px;
+}
+
+.logo,
+.main_menu,
+.main_menu ul>li,
+.social_icons,
+.social_icons ul {
+  display: inline-block;
+  align: left;
+}
+
+
+.footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+
+.social_icons ul {
+  color: white;
+  font-size: 20px;
+  vertical-align: bottom;
+}
+
+.social_icons ul .login_in {
+  font-size: 16px;
+  text-decoration: underline;
+  border-style: none;
+  padding: 7px;
+  color: rgb(117, 226, 144);
+  font-family: 'Raleway', sans-serif;
+  line-height: 3;
+}
+
+hr {
+  border-width: 2px;
+  border-style: solid;
+  color: white;
+}
+
+.header {
+  text-align: center;
+}
+
+.menu_buttons a {
+  color: white;
+}
+
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: rgb(117, 226, 144);
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(117, 226, 144);
+}
+
+label .hamburger:before { top: -10px; }
+
+label .hamburger:after { bottom: -10px; }
+
+label input { display: none; }
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+}
+
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #black;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+
+h1
+ {
+  color: white;
+  text-align: center;
+  word-spacing: 15px;
+  letter-spacing: 15px;
+  font-family: 'RaleWay', sans-serif;
+  margin: 15px;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+.container h6 {
+  margin-left: 180px;
+  margin-right: 60px;
+}
+
+h6 {
+  color: white;
+  text-align: center;
+  word-spacing: 7px;
+  font-family: 'Orbitron', monospace;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.newsletter {
+  display: inline-block;
+}
+
+.container,
+.subscribe {
+  display: inline-block;
+  line-height: 1.8
+}
+
+.footer p {
+  font-size: 10px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+
+.about,
+.socials,
+.image_copyright,
+.menu2,
+.search_button {
+  float: left;
+  text-align: center;
+  margin: 25px;
+  line-height: 1.7
+}
+
+.image_copyright,
+.link p {
+  margin: 0px;
+}
+
+.search_button input {
+  margin-top: 30px;
+  width: 180px;
+}
+
+
+#myBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: rgb(84, 208, 89); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/* Pixels - fine grained control
+Percentage - based on the parents width
+Elements will collapse and expand based
+on what is inside of it - auto is a
+default rule
+Viewport Width + VH -  percentage of browser
+Em - typographic ratio for text sizing mainly
+*/
