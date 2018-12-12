@@ -14,4 +14,21 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-$('.timer').startTimer();
+
+$(document).ready(function() {
+    $(".slides").responsiveSlides();
+
+    $('.timer').startTimer({
+        classNames: {
+            hours: 'myClass-hours',
+            minutes: 'myClass-minutes',
+            seconds: 'myClass-seconds',
+            clearDiv: 'myClass-clearDiv',
+            timeout: 'myClass-timeout'
+        }
+    });
+
+    $('#myBtn').on('click', function() {
+        topFunction();
+    });
+});

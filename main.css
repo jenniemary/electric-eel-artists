@@ -229,17 +229,6 @@ h3 {
   display: inline-block;
 }
 
-/* $('.timer').startTimer({
-  classNames: {
-    hours: 'myClass-hours',
-    minutes: 'myClass-minutes',
-    seconds: 'myClass-seconds',
-    clearDiv: 'myClass-clearDiv',
-    timeout: 'myClass-timeout'
-  }
-}) */
-
-
 .container h6 {
   margin-left: 180px;
   margin-right: 60px;
