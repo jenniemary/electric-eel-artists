@@ -173,18 +173,16 @@ h1
   margin: 15px;
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .snakes_board img {
+
+.snakes_board img {
     display: block;
     height: auto;
     float: left;
     width: 100%;
     border: 0;
 }
-}
 
 
-@media (max-width: 1023px) {
 .rslides {
   position: relative;
   list-style: none;
@@ -192,36 +190,30 @@ h1
   width: 100%;
   padding: 0;
   margin: 0;
-  }
 }
 
-@media (max-width: 1023px) {
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
     width: 100%;
   left: 0;
   top: 0;
-  }
 }
 
-@media (max-width: 1023px) {
 .rslides li:first-child {
   position: relative;
   display: block;
   float: left;
-  }
 }
 
-@media (max-width: 1023px) {
 .rslides img {
   display: block;
   height: auto;
   float: left;
   width: 100%;
   border: 0;
-  }
 }
+
 
 
 
