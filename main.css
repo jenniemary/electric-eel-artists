@@ -61,10 +61,11 @@ hr {
   color: white;
 }
 
+@media (max-width: 639px) {
 label .hamburger {
   position: absolute;
-  top: 135px;
-  left: 50px;
+  top: 29px;
+  left: 15px;
   width: 30px;
   height: 2px;
   background: rgb(117, 226, 144);
@@ -74,7 +75,9 @@ label .hamburger {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
+}
 
+@media (max-width: 639px) {
 label .hamburger:after, label .hamburger:before {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
@@ -85,6 +88,7 @@ label .hamburger:after, label .hamburger:before {
   height: 100%;
   background: rgb(117, 226, 144);
 }
+}
 
 label .hamburger:before { top: -10px; }
 
@@ -93,7 +97,7 @@ label .hamburger:after { bottom: -10px; }
 label input { display: none; }
 
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  box-shadow: 0 0 0 100vw black, 0 0 0 100vh black;
   border-radius: 0;
 }
 
@@ -116,20 +120,23 @@ label input:checked + .menu .hamburger:before {
 
 label input:checked + .menu + ul { opacity: 1; }
 
+@media (max-width: 639px) {
 label .menu {
   position: absolute;
-  right: -100px;
-  top: -100px;
+  right: 50px;
+  top: 50px;
   z-index: 100;
-  width: 200px;
-  height: 200px;
-  background: #black;
+  width: 60px;
+  height: 60px;
+  background: black;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  box-shadow: 0 0 0 0 black, 0 0 0 0 black;
   cursor: pointer;
 }
+}
+
 
 label ul {
   z-index: 200;
@@ -148,6 +155,11 @@ label a {
   display: block;
   color: #000;
   text-decoration: none;
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 
@@ -161,6 +173,18 @@ h1
   margin: 15px;
 }
 
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .snakes_board img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+}
+
+
+@media (max-width: 1023px) {
 .rslides {
   position: relative;
   list-style: none;
@@ -169,22 +193,27 @@ h1
   padding: 0;
   margin: 0;
   }
+}
 
+@media (max-width: 1023px) {
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
-  display: none;
-  width: 100%;
+    width: 100%;
   left: 0;
   top: 0;
   }
+}
 
+@media (max-width: 1023px) {
 .rslides li:first-child {
   position: relative;
   display: block;
   float: left;
   }
+}
 
+@media (max-width: 1023px) {
 .rslides img {
   display: block;
   height: auto;
@@ -192,6 +221,28 @@ h1
   width: 100%;
   border: 0;
   }
+}
+
+
+
+.spotify iframe {
+    display: block;
+    width: 100%;
+}
+
+h3 {
+  display: inline-block;
+}
+
+$('.timer').startTimer({
+  classNames: {
+    hours: 'myClass-hours',
+    minutes: 'myClass-minutes',
+    seconds: 'myClass-seconds',
+    clearDiv: 'myClass-clearDiv',
+    timeout: 'myClass-timeout'
+  }
+})
 
 
 .container h6 {
@@ -253,6 +304,7 @@ h6 {
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
+    display: none;
     outline: none; /* Remove outline */
     background-color: white; /* Set a background color */
     color: rgb(84, 208, 89); /* Text color */
@@ -263,7 +315,7 @@ h6 {
 }
 
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: black; /* Add a dark-grey background on hover */
 }
 
 
