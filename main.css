@@ -21,7 +21,6 @@ body {
   align: left;
 }
 
-
 .footer a {
   display: inline-block;
   text-decoration: none;
@@ -29,7 +28,6 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
 }
-
 
 .social_icons ul {
   color: white;
@@ -68,7 +66,7 @@ hr {
 label .hamburger {
   position: absolute;
   top: 29px;
-  left: 15px;
+  left: 0px;
   width: 50px;
   height: 3px;
   background: rgb(117, 226, 144);
@@ -78,7 +76,6 @@ label .hamburger {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
-
 
 label .hamburger:after,
 label .hamburger:before {
@@ -92,53 +89,58 @@ label .hamburger:before {
   background: rgb(117, 226, 144);
 }
 
-label .hamburger:before { top: -10px; }
+label .hamburger:before {
+  top: -10px;
+}
 
-label .hamburger:after { bottom: -10px; }
+label .hamburger:after {
+  bottom: -10px;
+}
 
-label input { display: none; }
+label input {
+  display: none;
+}
 
-label input:checked + .menu {
+label input:checked+.menu {
   box-shadow: 0 0 0 100vw black, 0 0 0 100vh black;
   border-radius: 0;
 }
 
-label input:checked + .menu .hamburger {
+label input:checked+.menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-label input:checked + .menu .hamburger:after {
+label input:checked+.menu .hamburger:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   bottom: 0;
 }
 
-label input:checked + .menu .hamburger:before {
+label input:checked+.menu .hamburger:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
 }
 
-label input:checked + .menu + ul { opacity: 1; }
+label input:checked+.menu+ul {
+  opacity: 1;
+}
 
-
-  label .menu {
-    position: absolute;
-    right: 550px;
-    top: 50px;
-    z-index: 100;
-    width: 60px;
-    height: 60px;
-    background: black;
-    border-radius: 50% 50% 50% 50%;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 black, 0 0 0 0 black;
-    cursor: pointer;
-  }
-
-
+label .menu {
+  position: absolute;
+  right: 550px;
+  top: 50px;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  background: black;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 black, 0 0 0 0 black;
+  cursor: pointer;
+}
 
 label ul {
   z-index: 200;
@@ -164,9 +166,7 @@ label a {
   text-align: center;
 }
 
-
-h1
- {
+h1 {
   color: white;
   text-align: center;
   word-spacing: 15px;
@@ -175,15 +175,13 @@ h1
   margin: 15px;
 }
 
-
 .snakes_board img {
-    display: block;
-    height: auto;
-    float: left;
-    width: 100%;
-    border: 0;
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
-
 
 .rslides {
   position: relative;
@@ -198,7 +196,7 @@ h1
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
-    width: 100%;
+  width: 100%;
   left: 0;
   top: 0;
 }
@@ -221,12 +219,9 @@ h1
   display: none;
 }
 
-
 .spotify iframe {
-    width: 100%;
+  width: 100%;
 }
-
-
 
 h3 {
   display: inline-block;
@@ -236,6 +231,7 @@ h3 {
 }
 
 .container h6 {
+  display: block;
   margin-left: 180px;
   margin-right: 60px;
 }
@@ -273,7 +269,7 @@ h6 {
 .search_button {
   float: left;
   text-align: center;
-  margin: 25px;
+  margin: 20px;
   line-height: 1.7
 }
 
@@ -287,40 +283,54 @@ h6 {
   width: 180px;
 }
 
-
 #myBtn {
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    display: none;
-    outline: none; /* Remove outline */
-    background-color: white; /* Set a background color */
-    color: rgb(84, 208, 89); /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  display: none;
+  outline: none;
+  /* Remove outline */
+  background-color: white;
+  /* Set a background color */
+  color: rgb(84, 208, 89);
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
 #myBtn:hover {
-    background-color: black; /* Add a dark-grey background on hover */
+  background-color: black;
+  /* Add a dark-grey background on hover */
 }
 
 /* responsive media queries */
-
 /* - small and medium breakpoints */
 @media (max-width: 1023px) {
   .snakes_board {
     display: none;
   }
-.countdown_timer {
-  display: none;
-}
+
+  .countdown_timer {
+    display: none;
+  }
+
   .rslides {
     display: block;
   }
+
   .spotify {
     display: block;
   }
@@ -328,22 +338,54 @@ h6 {
 
 /* - medium breakpoint only */
 @media (min-width: 640px) and (max-width: 1023px) {
-  .footer,
+
   .about,
   .socials,
   .image_copyright,
   .menu2,
   .search_button {
-    margin: auto;
+    margin: 10px;
     border: 10px;
     padding: 5px;
     font-size: 5px;
     line-height: 25px;
   }
 
+.menu_buttons img {
+  width: 160px;
+}
+
+img {
+  height: 70px;
+}
+
+.logo img {
+  width: 550px;
+  height: 300px;
+}
+
+.footer_img img {
+  width: 300px;
+  height: 150px;
+}
+
+.social_icons ul{
+  vertical-align: super;
+}
+
+.search_button input {
+  margin-top: 0px;
+  width: 150px;
+}
+
+.footer {
+  margin-top: 0px;
+}
 
 
 }
+
+
 
 /* - small breakpoint only */
 @media (max-width: 639px) {
@@ -351,39 +393,63 @@ h6 {
     display: block;
   }
 
-.newsletter {
-  text-align: center;
+  .container h6 {
+    margin: 0px;
+  }
+
+  .newsletter {
+    text-align: center;
+  }
+
+  .footer,
+  .about,
+  .socials,
+  .image_copyright,
+  .menu2,
+  .search_button {
+    margin: auto;
+    margin-top: 0px;
+    border: 10px;
+    padding: 5px;
+    font-size: 6px;
+    line-height: 25px;
+  }
+
+  .footer_img,
+  .footer_img img {
+    width: 250px;
+    padding: 0px;
+  }
+
+  .social_icons ul {
+    color: white;
+    font-size: 30px;
+    vertical-align: bottom;
+    padding-left: 160px;
+    padding-right: 0px;
+    margin: 0px;
+  }
+
+  .social_icons ul .login_in {
+    font-size: 13px;
+  }
+
+.search_button input {
+  margin-top: 0px;
+  width: 200px;
 }
 
-.footer,
-.about,
-.socials,
-.image_copyright,
-.menu2,
 .search_button {
-  margin: auto;
-  border: 10px;
-  padding: 5px;
-  font-size: 5px;
-  line-height: 25px;
+  padding-left: 250px;
 }
-
-
-.footer_img,
-.footer_img img{
-  width: 250px;
-  padding: 0px;
-}
-
+  .logo {
+    padding-left: 75px;
+  }
 
   .main_menu {
     display: none;
   }
 }
-
-
-
-
 
 /* Pixels - fine grained control
 Percentage - based on the parents width
