@@ -21,6 +21,11 @@ body {
   align: left;
 }
 
+.logo img {
+  padding-left: 0px;
+
+}
+
 .footer a {
   display: inline-block;
   text-decoration: none;
